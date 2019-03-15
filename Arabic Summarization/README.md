@@ -7,9 +7,14 @@ this implementation is a continuation of the amazing work done by
     and 
    - https://github.com/tensorflow/models/tree/master/textsum
 
+-------------------------------------------------
+
+
 ## Data :
 the Arabnews data found https://webhose.io/free-datasets/arabic-news-articles/ in a json format
 I have modified it to be in a csv format 
+
+-------------------------------------------------
 
 
 ## Model :
@@ -32,6 +37,21 @@ Model Details :
 > Number of words we will use: 309353
 > Percent of words we will use: 56.81%
 
+-------------------------------------------------
+
+## Links
+**Pickles** :
+https://drive.google.com/open?id=1m5JXk5-e5dQL8-B2F2-o5etgs6_sEcMU
+contains
+1. sorted text / sorted summary
+2. embedding matrix
+3. clean text / clean summary
+
+**Data**
+https://drive.google.com/open?id=1joX6vzXoI3amiZeU37HP6VPAWrKSj1d4
+
+**Trained Model**
+https://drive.google.com/open?id=1lxR9dLWP4nc26BuPNujqAkVNOlX44l5I
 
 ### Results/result_model_1_5_random_arab_16_3_2019_1_05am.xml
 - output from Model 1_5 that have achieved el7 
