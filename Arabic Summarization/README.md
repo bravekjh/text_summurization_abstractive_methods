@@ -53,6 +53,27 @@ https://drive.google.com/open?id=1joX6vzXoI3amiZeU37HP6VPAWrKSj1d4
 **Trained Model**
 https://drive.google.com/open?id=1lxR9dLWP4nc26BuPNujqAkVNOlX44l5I
 
+**Embedded Matrix**
+it has been trained over this corpus to gain the best results
+https://drive.google.com/open?id=1R_ETjqlsX72XVVjvg71Qp6Zg3KzaEnmJ
+https://drive.google.com/open?id=1-JeTCPSbxpjv7BUI67XC04OnDi_zIxyz
+to be placed in the same folder and then to be loaded inside your code by simply 
+```python
+print('Loading my Model ..')
+model = KeyedVectors.load("drive/Colab Notebooks/Model 2 Arab/" +"model_arabic_vec.model", mmap='r')
+print('Loading Done el7 !!')
+progress = ProgressBar(len(model.vocab), fmt=ProgressBar.FULL)
+
+for word in model.wv.vocab:
+      embedding = np.asarray(model[word], dtype='float32')
+      embeddings_index[word] = embedding
+      progress.current += 1
+      progress()
+progress.done()
+print('\n Word embeddings:', len(embeddings_index))
+print('\n') 
+```
+
 ### Results/result_model_1_5_random_arab_16_3_2019_1_05am.xml
 - output from Model 1_5 that have achieved el7 
 
