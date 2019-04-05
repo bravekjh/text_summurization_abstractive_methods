@@ -24,7 +24,7 @@ but using Arabic data , and using embedded marix that was specifically trained o
 
 Model Details :
 
-1.   RNN :256 node
+1.   RNN :100 node
 2.   2 Layers
 3.  150 length of Embedding Matrix using the word2vector that i have generted for training
 4.   Original function of sorting of data before training of David Currie's
